@@ -13,6 +13,8 @@ export enum themePalette {
     //Alerts
     ERROR_MAIN = "#f44336",
     BG_ERROR_MAIN = "rgba(244,67,54,0.1)",
+    SUCCESS_MAIN = "#66bb6a",
+    BG_SUCCESS_MAIN = "rgba(102,187,106,0.1)",
 }
 
 const theme = createTheme({
@@ -47,8 +49,18 @@ const theme = createTheme({
                             fontSize:"1em",
                         },
                     },
+                    styleOverrides:{
+                        standardError: {
+                            border: `1px solid ${themePalette.ERROR_MAIN}`,
+                            background: themePalette.BG_ERROR_MAIN,
+
+                        },
+
                 },
+                
             },
+        },
+            
         });
 
 export const ThemeConfig: React .FC<ThemeProp> = ({children}) => {
