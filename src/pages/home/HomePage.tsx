@@ -1,18 +1,19 @@
 import React from 'react'
-import { Button } from '@mui/material';
 import { Container } from '@mui/system';
-import { useNotification } from '../../context/notification.context';
+import { Button } from '@mui/material';
+// import { useNotification } from '../../context/notification.context';
+import { HeaderComponent } from '../../components/Header/HeaderComponent';
 
 export const HomePage: React.FC<{}> = () => {
-  const {getError} = useNotification()
-  const handleClick = () => {
-    getError("WUBBA LUBBA DUB DUB")
-  }
+  // const {getSuccess} = useNotification()
+  // const handleClick = () => {
+  //   getSuccess("WUBBA LUBBA DUB DUB")
+  // }
   
 
     return(
-        <Container sx={{mt: 9}} maxWidth="xl">
-        <Button onClick={handleClick} fullWidth variant="contained">Hello World HOMEPAGE</Button>
+        <Container maxWidth="xl">
+          <HeaderComponent title='Hola Mundo' description="heyhey" element={<Button fullWidth variant="contained">Rickyti Rick</Button>}/>
       </Container>
 
     )
