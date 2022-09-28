@@ -1,5 +1,6 @@
 import React from 'react'
 import {Alert, Snackbar, AlertColor, Typography} from "@mui/material";
+import {CardComponent} from "../Cards/CardComponent"
 
 type NotificationProps = {
     open: boolean,
