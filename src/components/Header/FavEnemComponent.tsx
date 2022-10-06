@@ -8,8 +8,7 @@ type HeaderProps = {
   element?: React.ReactNode | null;
 }
 
-
-export const HeaderComponent: React.FC<HeaderProps> = ({title, description, element,}) => {
+export const FavEnemComponent: React.FC<HeaderProps> = ({title, description, element,}) => {
   return (
     <div>
     <Box sx={{width:"100%", height:"350px"}}>
@@ -22,7 +21,6 @@ export const HeaderComponent: React.FC<HeaderProps> = ({title, description, elem
       <Grid item sx={{mt: 2}}>
         <Typography>{description}</Typography>
       </Grid>
-      <TextField sx={{mt: 3}}  id="standard-basic" fullWidth label="search your favorites (e.g: Rick Sanchez)" variant="standard" />
       </Grid>
       </Grid>
       </Grid>

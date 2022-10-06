@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '@mui/system';
-import { Grid, Button } from '@mui/material';
+import { Grid, Button, TextField } from '@mui/material';
 import { HeaderComponent } from '../../components/Header/HeaderComponent';
 import { characters } from '../../api/characters';
 import { CardComponent } from '../../components/Cards/CardComponent';
@@ -23,9 +23,10 @@ export const HomePage: React.FC<{}> = () => {
 
 
 
+
     return(
         <Container maxWidth="xl">
-          <HeaderComponent title='API ' description="here you can watch your favorites" element={<Button fullWidth variant="contained">My characters</Button>}/>
+          <HeaderComponent title='API ' description="" element={<Button fullWidth variant="contained">My characters</Button>}/>
           <div>
             {
               allCharacters?.length !== 0 ? (
