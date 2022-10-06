@@ -16,8 +16,8 @@ export const NavBar: React.FC<{}> = () => {
               </Grid>
               <Grid item>
                 <Stack direction="row" spacing={2}>
-                  <Button variant="contained" onClick={()=> navigate("login")}>Login</Button> 
-                  <Button variant="outlined">Register</Button>
+                  <Button variant="contained" onClick={()=> navigate("favorites")}>Favorites</Button> 
+                  <Button variant="outlined" onClick={()=> navigate("enemies")}>Enemies</Button>
                 </Stack>
               </Grid>
             </Grid>

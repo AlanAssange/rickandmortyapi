@@ -24,7 +24,8 @@ export const CardComponent: React.FC<CardProps>= ({image, name, species, status}
     
         </CardContent>
         <CardActions>
-            <Button fullWidth variant="contained" size="small">Learn More</Button>
+            <Button fullWidth variant="contained" size="small">Add as favorite</Button>
+            <Button fullWidth variant="outlined" size="small">Add as enemy</Button>
         </CardActions>
     </Card>
   )
